@@ -1,0 +1,47 @@
+main {
+  border: 2px solid black;
+  width: 100%;
+}
+
+/*span {
+  visibility: hidden;
+}
+
+span:hover {
+  visibility: visible;
+}
+
+main > #card1:hover {
+  /*background: grey;*/
+}*/
+
+.flip {
+  position: relative;
+  /*transition: all 1s ease;*/
+  transform: perspective(200px);
+  transform-origin: 100% 50%;
+  transform-style: preserve-3d;
+}
+
+.flip:hover{
+  transform: perspective(200px) rotateY(-180deg) translateX(100%);
+}
+
+.flip-1 {
+  position: absolute;
+  backface-visibility: hidden
+}
+
+.flip .flip-1{
+  transform: rotateY(-180deg);
+}
+
+.card {
+  /*background-image: url("logo-lab.png");*/
+  /*background-position: center;*/
+  border: 3px solid black;
+  float: left;
+  margin: 5% 6%;
+  width: 20%;
+  height: 200px;
+}
