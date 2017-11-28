@@ -1,6 +1,16 @@
+.efects{
+    transform-style: preserve-3d;
+  transition: 2s; 
+}
+
+.rotation-efect{
+  transform: rotateY(180deg);
+}
+
 main{
   border: 1px solid black;
   width: 90%;
+  overflow: auto;
 }
 
 span{
@@ -18,7 +28,9 @@ span{
   height: 200px;
   float: left;
   margin: 1% 4%;
-}
+  /* transform-style: preserve-3d;
+  transition: 2s; estatico */
+ }
 
 main #card1:hover,
 main #card6:hover{
@@ -26,6 +38,7 @@ main #card6:hover{
   background-image: url("../assets/image/imagen1.jpg");
   background-repeat: no-repeat;
   background-size: cover;
+  /* transform: rotateY(180deg); statico */
 }
 
 main #card2:hover,
@@ -34,6 +47,7 @@ main #card9:hover{
   background-image: url("../assets/image/imagen2.jpg");
   background-repeat: no-repeat;
   background-size: cover;
+  
 }
 
 main #card3:hover,
@@ -57,6 +71,10 @@ main #card5:hover{
   background-image: url("../assets/image/imagen5.jpg");
   background-repeat: no-repeat;
   background-size: cover;
+}
+
+.fondo{
+  background: blue;
 }
 
 
