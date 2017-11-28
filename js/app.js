@@ -11,13 +11,13 @@ function queCartaEs(){
   var nombre = this.dataset.nombre; 
   var color = this.dataset.color;
   // console.log(nombre, color);
-
   var pNombre =  document.createElement("p");
   pNombre.textContent = nombre +" " + color;
   console.log(pNombre);
   var padre = document.getElementsByClassName("padre")[0];
   padre.appendChild(pNombre);
   pNombre.classList.add("fondo");
+  this.style.background
 }
 
 function rotation (){  // estas estan viendo si tiene clase o no
